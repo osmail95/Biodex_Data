@@ -78,7 +78,7 @@ def process_csv_file(csv_file):
         st.download_button(
             label="Download Processed CSV",
             data=output.getvalue(),
-            file_name=f"{csv_file.name}_final",
+            file_name=f"final_{csv_file.name}",
             mime="text/csv"
         )
 
